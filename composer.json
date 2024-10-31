@@ -1,0 +1,20 @@
+{
+    "name": "lumoq/menus",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "^5.3",
+        "slim/slim": "^4.14",
+        "components/jquery": "^3.7",
+        "monolog/monolog": "^3.7"   
+    },
+    "autoload": {
+        "psr-4": {
+            "Lumoq\\Menus\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucimara"
+        }
+    ]
+}

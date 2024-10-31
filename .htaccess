@@ -1,0 +1,12 @@
+# Habilita o módulo de reescrita
+RewriteEngine On
+
+# Se o seu site estiver em um subdiretório, descomente e ajuste a linha abaixo
+# RewriteBase /subdiretorio/
+
+# Verifica se o pedido não é para um diretório existente
+RewriteCond %{REQUEST_FILENAME} !-d
+# Verifica se o pedido não é para um arquivo existente
+RewriteCond %{REQUEST_FILENAME} !-f
+# Reescreve a URL para index.php
+RewriteRule ^ index.php [QSA,L]
